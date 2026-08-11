@@ -1,0 +1,148 @@
+
+/*General body style*/
+
+body{
+
+    background:#d76144;
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans';
+}
+
+/*Navigation bar styling*/
+
+nav{
+
+    width: 100%;
+    background-color: #0c4648;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 50px;
+
+}
+
+
+ul{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 40px;
+    gap: 30px;
+}
+
+ul li{
+
+    padding: 0px 10px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #dfceb9;
+    font-size:20px;
+    transition: 0.5s ease-in-out;
+}
+
+ul li a:hover{
+    color: aquamarine;
+}
+
+ul li a:active{
+    color: aquamarine;
+}
+
+h1{
+    text-align:center;
+    color:bisque;
+    margin-top:30px;
+    font-size: 50px;
+}
+
+/*Form outline and input styling*/
+
+form{
+    width:550px;
+    margin:30px auto;
+    background:#eba796;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 0 15px rgba(0,0,0,.15);
+}
+
+label{
+    display:block;
+    margin-top:15px;
+    font-weight:bold;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+input[type=date]{
+    width:100%;
+    padding:10px;
+    margin-top:6px;
+    border:1px solid #dfceb9;
+    border-radius:6px;
+    box-sizing:border-box;
+    color: black;
+}
+
+input[type=checkbox],
+input[type=radio]{
+    margin-right:8px;
+}
+
+button{
+    width:100%;
+    margin-top:25px;
+    padding:12px;
+    border:none;
+    background:#3b6061;
+    color:white;
+    font-size:18px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#d76144;
+}
+
+/*Footer Styling*/
+
+.footer{
+background-color: #0c4648;
+color: #dfceb9;
+padding: 50px 50 px;
+margin-top: 50px;
+}
+
+.footer-data{
+    flex: 1;
+    justify-content: center;
+}
+
+.footer-section p{
+    color: #dfceb9;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.socials a{
+    display: inline-block;
+    margin-right: 15px;
+    color: #dfceb9;
+    transition: ease-in-out;
+    
+}
+
+.footer-bottom{
+    margin: 0;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 20px;
+    border-top: 20px;
+    font-size: 15px;
+}

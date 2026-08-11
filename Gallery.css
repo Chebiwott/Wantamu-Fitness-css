@@ -1,0 +1,193 @@
+/*General body styling*/
+
+body { 
+  background-color: #d76144; 
+  margin: 0px; 
+  padding: 0px; 
+    box-sizing: border-box;
+    font-family: 'Gill Sans';
+}
+
+/*Naigation bar styling*/
+
+nav{
+
+    width: 100%;
+    background-color: #0c4648;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 50px;
+
+}
+
+
+ul{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 40px;
+    gap: 30px;
+}
+
+ul li{
+
+    padding: 0px 10px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #dfceb9;
+    font-size:20px;
+    transition: 0.5s ease-in-out;
+}
+
+ul li a:hover{
+    color: aquamarine;
+}
+
+ul li a:active{
+    color: aquamarine;
+}
+
+h1{
+    text-align:center;
+    color: #0c4648;
+    margin-top:30px;
+    font-size: 50px;
+}
+
+
+.lead-container {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+/*Flip card styling*/
+
+.flip-card {
+  background-color: transparent;
+  width: 250px;
+  height: 300px;
+  perspective: 1000px;
+  margin: 0 auto;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.flip-card-front img {
+  width: 98%;
+  height: 98%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+
+.flip-card-front {
+  background-color: #3b6061;
+}
+
+
+.flip-card-back {
+  background-color:  #eba796;
+  color: #dfceb9;
+  transform: rotateY(180deg);
+}
+
+.gallery{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(3,300px);
+  gap: 30px;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 40px auto;
+  pad: 20px;
+}
+
+.team {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.card img {
+  border-radius: 50%;
+  width: 500px;
+  height: 500px;
+}
+
+.caption{
+  color: #0c4648;
+  position: center;
+  font-size: 50px;
+}
+
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+
+/*Footer styling*/
+
+.footer{
+background-color: #0c4648;
+color: #dfceb9;
+padding: 50px 50 px;
+margin-top: 50px;
+}
+
+.footer-data{
+    flex: 1;
+    justify-content: center;
+}
+
+.footer-section p{
+    color: #dfceb9;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.socials a{
+    display: inline-block;
+    margin-right: 15px;
+    color: #dfceb9;
+    transition: ease-in-out;
+    
+}
+
+.footer-bottom{
+    margin: 0;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 20px;
+    border-top: 20px;
+    font-size: 15px;
+}
